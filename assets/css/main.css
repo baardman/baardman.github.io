@@ -100,7 +100,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #787878; /* #a2a2a2 */
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
+		font-size: 12pt;
 		font-weight: 400;
 		line-height: 1.75em;
 	}
@@ -111,7 +111,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color:  #dbaf00  ; /* #a2a2a2 */
+		color:  #00274c  ; /* #a2a2a2 */
 		text-decoration: none;
 	}
 
@@ -2028,7 +2028,7 @@ input, select, textarea {
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background: url("images/overlay.png");
+			background: url("../../images/bg.jpg");
 			border-radius: 0.35em;
 			content: '';
 			display: block;
@@ -2073,7 +2073,7 @@ input, select, textarea {
 			}
 
 			.image.thumb:hover:before {
-				background: url("images/overlay.png"), url("images/overlay.png");
+				background: url("../../images/bg.jpg"), url("../../images/bg.jpg");
 				opacity: 1.0;
 			}
 
@@ -2572,7 +2572,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #00274c;
 		background-attachment: scroll,								scroll;
-		/*background-image: url("images/overlay.png"), url("../../images/bg.jpg");*/
+		/*background-image: url("../../images/bg.jpg"), url("../../images/bg.jpg");*/
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								100%;
@@ -2661,11 +2661,20 @@ input, select, textarea {
 
 /* Main */
 
-	#main {
+/*	#main {
 		margin-left: 30%;
 		max-width: 54em;
 		padding: 8em 4em 4em 4em;
 		width: calc(100% - 35%);
+	}
+*/
+
+	#main {
+		margin-left: 25%;
+		margin-right: 25%;
+		max-width: 54em;
+		padding: 8em 4em 4em 4em;
+		width: 50%;
 	}
 
 		#main > section {
@@ -2956,6 +2965,14 @@ input, select, textarea {
 				font-size: 12pt;
 			}
 
+			#main {
+				margin-left: 20%;
+				margin-right: 20%;
+				max-width: 54em;
+				padding: 8em 4em 4em 4em;
+				width: 60%;
+			}
+
 	}
 
 /* Large */
@@ -2993,11 +3010,20 @@ input, select, textarea {
 
 		/* Main */
 
-			#main {
+/*			#main {
 				margin-left: 30%;
 				max-width: none;
 				padding: 6em 3em 3em 3em;
 				width: calc(100% - 30%);
+			}
+*/
+
+			#main {
+				margin-left: 10%;
+				margin-right: 10%;
+				max-width: 54em;
+				padding: 8em 4em 4em 4em;
+				width: 80%;
 			}
 
 	}
@@ -3046,7 +3072,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				/*background-image: url("../../images/bg.jpg"), url("../../images/bg.jpg");*/
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
@@ -3076,12 +3102,20 @@ input, select, textarea {
 
 		/* Main */
 
-			#main {
+		/*	#main {
 				margin: 0;
 				padding: 6em 4em;
 				width: 100%;
 			}
+*/
 
+		#main {
+			margin-left: 5%;
+			margin-right: 5%;
+			max-width: 54em;
+			padding: 8em 4em 4em 4em;
+			width: 90%;
+		}
 	}
 
 /* Small */
@@ -3197,7 +3231,7 @@ input, select, textarea {
 	    width: 100%; /* Full width */
 	    transition: top 0.3s; /* Transition effect when sliding down (and up) */
 	    z-index: 1;
-		margin-left: 30%;
+		margin-left: 0%; /*30%*/
 	}
 
 	/* Style the navbar links */
@@ -3218,7 +3252,7 @@ input, select, textarea {
 	@media screen and (max-width: 1280px) {
 
 		#navbar {
-			margin-left: 30%;
+			margin-left: 0%; /*30%*/
 		}
 
 	}
